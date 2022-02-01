@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    {% load django_template_maths %}
+</head>
+<body>
+<h1>Table of {{n}}</h1>
+{% for i in range %}
+    {{n}} x {{i}} = {{n|mul:i}}<br>
+{% endfor %}
+</body>
+</html>
